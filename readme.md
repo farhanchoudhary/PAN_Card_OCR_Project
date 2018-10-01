@@ -54,7 +54,7 @@ Each component in this repository has specific tasks, explained as follows:
 5. **__json2csv.py__**
    Once you have converted all the files into their respective extracted JSONs, you can export them into a CSV for analysis and other usage. 
 
-6. ###**__ocr_v2.py__**
+### 6. **__ocr_v2.py__**
    Contrary to the name, this is the **current functional** program to extract text from the image post all steps of pre-processing.
 
 7. **__ocr_main.py__**
