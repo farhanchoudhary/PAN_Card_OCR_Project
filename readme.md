@@ -3,7 +3,7 @@
 
 The purpose of this WIP Project is to efficiently extract the text contained in a PAN Card image and store it in a JSON. Herein, we are using the following libraries. The current version 2.0 has been run effectively in October, 2018. Any recommendations are welcome. We also need to understand the limitations of pytesseract as it won't run on noisy images with salt & pepper grains and/or poor image quality, i.e. anything below 300 DPI. More information can be found [here](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35248.pdf)
 
-![alt text]: (https://github.com/farhanchoudhary/PAN_Card_OCR_Project/blob/master/Capture_2.PNG) "Inline output after execution"
+![alt text](https://github.com/farhanchoudhary/PAN_Card_OCR_Project/blob/master/Capture_2.PNG) "Inline output after execution"
 
 The algorithm has been tested with both good quality images and of images with poor quality. The accuracy of the information extracted depends highly on the resolution of the image and the quality of the image. While Tesseract performs well on near perfect images with little or no noise, it fails in more tricky situations specially where there's reflective light on the surface of the PAN card or twists/turns etc. There are a couple of versions in this compendium repository:
 
@@ -73,4 +73,4 @@ Each component in this repository has specific tasks, explained as follows:
 8. **__google_vision.py__**
    	Uses Google Vision API to extract text from image.
 	
-![alt text]: (https://github.com/farhanchoudhary/PAN_Card_OCR_Project/blob/master/Capture.PNG) "Sample of Text Extracted and placed in CSV"
+![alt text](https://github.com/farhanchoudhary/PAN_Card_OCR_Project/blob/master/Capture.PNG) "Sample of Text Extracted and placed in CSV"
