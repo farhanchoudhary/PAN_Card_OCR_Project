@@ -10,6 +10,8 @@ The algorithm has been tested with both good quality images and of images with p
   * Implemented on PyTesseract
   * Implemented using Google API [Setup your Cloud Services](https://console.cloud.google.com/home/dashboard?project=psychic-surface-217102)
   * Implemented using OCR.Space [More info here](https://ocr.space/ocrapi)
+  
+*__Note__: While using the API Versions of this program, kindly make sure that the image size that you're using for detection is less than 1 MB, with file size exceeding the threshold the program will render cold*
 
 ## IDE and list of libraries used:
 
