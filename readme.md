@@ -17,14 +17,14 @@ The algorithm has been tested with both good quality images and of images with p
 
 1. PyCharm Community Edition running Python 3.6
 2. Pillow 
-3. pytesseract
+3. [pytesseract](https://opensource.google.com/projects/tesseract)
 4. cv2
 5. re
 6. json
-7. ftfy
+7. [ftfy](https://ftfy.readthedocs.io/en/latest/)
 8. os
 9. argparse
-10. nostril 
+10. [nostril](https://www.theoj.org/joss-papers/joss.00596/10.21105.joss.00596.pdf)
 
 ![alt text](https://github.com/farhanchoudhary/PAN_Card_OCR_Project/blob/master/Capture_3.PNG "Workflow/Logic of Project")
 
