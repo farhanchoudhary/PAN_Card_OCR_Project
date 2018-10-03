@@ -39,7 +39,7 @@ Each component in this repository has specific tasks, explained as follows:
    	Command: `python crop_morphology.py image_pan.jpg` 
 
 2. **__deskew.py__**
-   	Given an image containing a rotated block of text at an unknown angle, we need to correct the text skew by:
+   	The intuition can be found at [this link](https://www.pyimagesearch.com/2017/02/20/text-skew-correction-opencv-python/) about implementing deskwing and why is it important when an image to text conversion is involved. Given an image containing a rotated block of text at an unknown angle, we need to correct the text skew by:
 	
 	1. Detecting the block of text in the image.
 		
