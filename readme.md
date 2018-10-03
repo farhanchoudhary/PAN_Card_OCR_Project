@@ -53,6 +53,8 @@ Each component in this repository has specific tasks, explained as follows:
 
 5. **__json2csv.py__**
    	Once you have converted all the files into their respective extracted JSONs, you can export them into a CSV for analysis and other usage. 
+	Command: `python json2csv.py jsons output.csv` 
+	Note: `jsons` is the folder name and not to be specified as \jsons, the program will automatically treat the folder specified to be in the directory of the program itself. In case `output.csv` is not written into the disk, create a flat-file with the same name which will be empty and there will be no write errors.
 
 6. **__ocr_v2.py__**
    Contrary to the name, this is the **current functional** program to extract text from the image post all steps of pre-processing.
