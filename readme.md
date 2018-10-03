@@ -78,3 +78,13 @@ Each component in this repository has specific tasks, explained as follows:
    	Uses Google Vision API to extract text from image.
 	
 ![alt text](https://github.com/farhanchoudhary/PAN_Card_OCR_Project/blob/master/Capture.PNG "Sample of Text Extracted and placed in CSV")
+
+# Accuracy Matrix
+
+![alt text](https://github.com/farhanchoudhary/PAN_Card_OCR_Project/blob/master/s-1.jpg "Sample")
+
+## Way Forward
+
+PyTesseract and the Tesseract Engine has many flaws when it comes to converting image to text, especially if the image is noisy and/or contains salt and pepper noise. This can be overcome later by implementing image classification algorithms using LSTMs for better accuracy. 
+
+#### This is a WIP Project because eventually I plan on expanding the program into a Flask application that would be able to extract information from PAN Card, Aadhar Card, Voter ID Card, Driving License and Indian Passport with a UI feature.
