@@ -79,6 +79,26 @@ Each component in this repository has specific tasks, explained as follows:
 	
 ![alt text](https://github.com/farhanchoudhary/PAN_Card_OCR_Project/blob/master/Capture.PNG "Sample of Text Extracted and placed in CSV")
 
+# Preprocessing Commands
+
+| Command     | Context | Explanation |
+|-------------|:--------:|-----------:|
+| `thresh`    | Linear Threshold | First, you pick a threshold value, say 127. If the pixel value is greater than the threshold, it becomes black. If less, it becomes white. OpenCV provides us with different types of thresholding methods that can be passed as the fourth parameter. I often use binary threshold for most tasks, but for other thresholding methods you may visit [the official documentation](https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html).|
+| `adaptive` | Adaptive Threshold | There are two adaptive methods for calculating the threshold value. While **Adaptive Thresh Mean** returns the mean of the neighborhood area, **Adaptive Gaussian Mean** calculates the weighted sum of the neighborhood values.|
+| `linear`    | Image Resizing | Faster image resizing|
+| `cubic`      | Image Resizing | You may need to scale your image to a larger size to recognize small characters. In this case, INTER_CUBIC generally performs better than other alternatives, though it’s also slower than others.|
+| `blur`    | Median Blur | In Median Blurring the central element in the kernel area is replaced with the median of all the pixels under the kernel. Particularly, this outperforms other blurring methods in removing salt-and-pepper noise in the images.
+
+Median blurring is a non-linear filter. Unlike linear filters, median blurring replaces the pixel values 
+with the median value available in the neighborhood values. So, median blurring preserves edges 
+as the median value must be the value of one of neighboring pixels |
+| `gauss`    | Gaussian Blur | Gaussian Blurring works in a similar fashion to Averaging, but it uses Gaussian kernel, instead of a normalized box filter, for convolution. Here, the dimensions of the kernel and standard deviations in both directions can be determined independently. 
+Gaussian blurring is very useful for removing — guess what? — gaussian noise from the image. On the contrary, gaussian blurring does not preserve the edges in the input.|
+| `bilateral` | Bilateral Filtering |Speaking of keeping edges sharp, bilateral filtering is quite useful for removing the noise without 
+smoothing the edges. Similar to gaussian blurring, bilateral filtering also uses a gaussian filter to find the gaussian weighted average in the neighborhood. However, it also takes pixel difference into account while blurring the nearby pixels.
+
+Thus, it ensures only those pixels with similar intensity to the central pixel are blurred, whereas the pixels with distinct pixel values are not blurred. In doing so, the edges that have larger intensity variation, so-called edges, are preserved. |
+
 # Accuracy Matrix
 
 ![alt text](https://github.com/farhanchoudhary/PAN_Card_OCR_Project/blob/master/s-1.jpg "Sample")
