@@ -26,6 +26,8 @@ The algorithm has been tested with both good quality images and of images with p
 9. argparse
 10. nostril 
 
+![alt text](https://github.com/farhanchoudhary/PAN_Card_OCR_Project/blob/master/Capture_3.PNG "Workflow/Logic of Project")
+
 ## Usage
 
 ---------------------------------------------
