@@ -36,10 +36,14 @@ Each component in this repository has specific tasks, explained as follows:
 
 2. **__deskew.py__**
    	Given an image containing a rotated block of text at an unknown angle, we need to correct the text skew by:
-		1. Detecting the block of text in the image.
-		2. Computing the angle of the rotated text.
-		3. Rotating the image to correct for the skew.
-  	 We typically apply text skew correction algorithms in the field of automatic document analysis, but the process itself can be applied to other domains as well. 
+	
+	1. Detecting the block of text in the image.
+		
+	2. Computing the angle of the rotated text.
+		
+	3. Rotating the image to correct for the skew.
+		
+  	We typically apply text skew correction algorithms in the field of automatic document analysis, but the process itself can be applied to other domains as well. 
    	Command: `python deskew.py image_pan.jpg`
 
 3. **__morph_final.py__**
