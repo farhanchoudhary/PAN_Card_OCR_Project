@@ -59,6 +59,9 @@ Each component in this repository has specific tasks, explained as follows:
 4. **__morph_interactive.py__**
    	A playground to morph images as per your need, cycling with various parameters found [here](http://northstar-www.dartmouth.edu/doc/idl/html_6.2/Morphing.html)
    	Command: `python morph_interactive.py image_pan.jpg`
+	
+	Press 1 & 2 to cycle through the different modes and the CV window will show the sliders to adjust the intensity of the preprocessing steps involved. 
+	
    	Note: You will need to save the image as per your need. Tesseract is not a one-stop-shop for all OCR needs, especially for PAN Cards that differ on case to case basis.
 
 5. **__json2csv.py__**
