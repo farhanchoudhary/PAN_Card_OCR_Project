@@ -80,6 +80,11 @@ Each component in this repository has specific tasks, explained as follows:
 8. **__google_vision.py__**
    	Uses Google Vision API to extract text from image.
 	
+9. **__preprocess_v2.py__**
+	More information on this version of preprocessing can be found [here](http://www.m.cs.osakafu-u.ac.jp/cbdar2007/proceedings/papers/O1-1.pdf) which is based on the paper *Font and Background Color Independent Binarization*. For optimum accuracy prior to running the image through the Tesseract Engine, kindly run this file. 
+	
+	Command: `python preprocess_v2.py input.jpg output.jpg`
+	
 ![alt text](https://github.com/farhanchoudhary/PAN_Card_OCR_Project/blob/master/Capture.PNG "Sample of Text Extracted and placed in CSV")
 
 # Preprocessing Commands
